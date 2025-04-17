@@ -2,6 +2,10 @@
 
 A Java-based Car Rental System that allows users to manage cars, customers, leases, and payments. The system uses **JDBC** for database interaction and follows an object-oriented design with layered architecture.
 
+## 📂 Project Structure
+
+src/ ├── client/ │ └── MainModule.java ├── dao/ │ ├── ICarLeaseRepository.java │ └── ICarLeaseRepositoryImpl.java ├── entity/ │ ├── Car.java │ ├── Customer.java │ ├── Lease.java │ └── Payment.java ├── exception/ │ ├── CarExistsException.java │ ├── CarNotFoundException.java │ ├── CustomerExistsException.java │ ├── CustomerNotFoundException.java │ ├── DbConnectionException.java │ └── LeaseNotFoundException.java ├── test/ │ ├── CarCreationTest.java │ ├── ExceptionTest.java │ ├── LeaseCreationTest.java │ └── LeaseRetrievalTest.java ├── util/ │ ├── DBConnection.java │ ├── ProjectConstants.java │ └── PropertyUtil.java └── db.properties
+
 ## 🧠 Features
 
 - Add, view, and manage **Cars** and **Customers**
@@ -43,7 +47,7 @@ A Java-based Car Rental System that allows users to manage cars, customers, leas
 
 5.Run MainModule.java to interact with the system.
 
-🧪 Unit Testing
+##🧪 Unit Testing
 
 JUnit test cases are available for:
 
@@ -55,7 +59,7 @@ JUnit test cases are available for:
 
 •	Exception scenarios (CarExists, CustomerExists, LeaseNotFound)
 
-👩‍💻 Author
+##👩‍💻 Author
 
 Vaishnavi Sharad Patil
 
